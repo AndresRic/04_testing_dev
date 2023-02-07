@@ -1,5 +1,5 @@
 const info = {
-	quoteNumber: 354,
+	quoteNumber: 365,
 	vehiculo: {
 		placa: 'QUU-0035',
 		usoVehiculo: 1, //1 = particular, 2= comercial,
@@ -17,7 +17,7 @@ const info = {
 		Nacionalidad: 'ECUATORIANA',
 		celular: '0980980980',
 		email: 'EMAIL_ASEGURADO@GMAIL.COM',
-		direccion: 'CHOSITA EN EL MAR',
+		direccion: 'CHOSITA EN LA PLAYA',
 		provinciaCanton: 'SALINAS',
 		tipoDireccion: 'CORRESPONDENCIA',
 	},
@@ -50,7 +50,7 @@ const info = {
 		provincia: 'SALINAS',
 	},
 	id_token:
-		'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJjNmEwYmNhYy1kYTkwLTRkODMtOTE2OC1lOTVmNWVlYjZjODYiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMDhhODMzMzktOTBlNy00OWJmLTkwNzUtOTU3Y2NkNTYxYmYxL3YyLjAiLCJpYXQiOjE2NzU3MzI2MjEsIm5iZiI6MTY3NTczMjYyMSwiZXhwIjoxNjc1NzM2NTIxLCJlbWFpbCI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsIm5hbWUiOiJNdcOxb3osIEFuZHLDqXMiLCJub25jZSI6IjY3ODkxMCIsIm9pZCI6ImVjOWNiYWQ0LWNlNmUtNDMxOS05ZDk3LWY0MzNlMzE2NmUzYiIsInByZWZlcnJlZF91c2VybmFtZSI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsInJoIjoiMC5BUU1BT1RPb0NPZVF2MG1RZFpWOHpWWWI4YXk4b01hUTJvTk5rV2pwWDE3cmJJWURBRTQuIiwic3ViIjoiMndOeWNVaHRvZHdHU0hNMHcwNm5SWW9xQVRlNUtULTY5NUU4SDE0aU5JMCIsInRpZCI6IjA4YTgzMzM5LTkwZTctNDliZi05MDc1LTk1N2NjZDU2MWJmMSIsInV0aSI6IjlqX3BIQ0UxekUtWU5YcDlFNDAtQVEiLCJ2ZXIiOiIyLjAiLCJlbXBsb3llZWlkIjoibjE2MjI1NDIifQ.cNyW3PX4_IEXIJKa3h_eFpOeec09ueYUhoLx3_R4Lu1E3rexhlksImm15yKes5bOXvvVU6w3imtBQhRtTPwsu4oAN4ldkkGt3DUE1IxMIXr4uFI8mvK4bz4n-0kOxvqNUTuRCbJ67MwxrlyRVbJH2RghgaAQxw2D9LOYnm4ugdWR7JcRhtLz0g3yt4v9Fb4w5RURhIGpV8VW0bPWUjvcPTblh66sYxEz5H2Q7chb9zeKC2P04m6HmAvioabbztQVCUd00V7xN2V2dgNkOuoQQQFfTlUd9QT9IgJcZqaYGsqdDl3vYyQBbVv8ikuWk3jzZACuY8AZU7GjK7C5KsqNHA',
+		'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJjNmEwYmNhYy1kYTkwLTRkODMtOTE2OC1lOTVmNWVlYjZjODYiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMDhhODMzMzktOTBlNy00OWJmLTkwNzUtOTU3Y2NkNTYxYmYxL3YyLjAiLCJpYXQiOjE2NzU3ODkwNDUsIm5iZiI6MTY3NTc4OTA0NSwiZXhwIjoxNjc1NzkyOTQ1LCJlbWFpbCI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsIm5hbWUiOiJNdcOxb3osIEFuZHLDqXMiLCJub25jZSI6IjY3ODkxMCIsIm9pZCI6ImVjOWNiYWQ0LWNlNmUtNDMxOS05ZDk3LWY0MzNlMzE2NmUzYiIsInByZWZlcnJlZF91c2VybmFtZSI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsInJoIjoiMC5BUU1BT1RPb0NPZVF2MG1RZFpWOHpWWWI4YXk4b01hUTJvTk5rV2pwWDE3cmJJWURBRTQuIiwic3ViIjoiMndOeWNVaHRvZHdHU0hNMHcwNm5SWW9xQVRlNUtULTY5NUU4SDE0aU5JMCIsInRpZCI6IjA4YTgzMzM5LTkwZTctNDliZi05MDc1LTk1N2NjZDU2MWJmMSIsInV0aSI6Im1qVGxHb2dYVFVTUFJPZ3N2SWY4QUEiLCJ2ZXIiOiIyLjAiLCJlbXBsb3llZWlkIjoibjE2MjI1NDIifQ.L8NEO0UgpaBUH-4o0zQfzzmEZS-qZVXeZTW0XtNaSlybt2XLD2vC1bYKJCU8xRXih_HF1JNxBGID8j0uaEy6Ty1k9smN97ZbwQO5ZkOue9lrdUufxN7rjiKydo8UPfef6IvIIRcM3IN_KaMapFNQsOC3ZwRwkAYl0IfAdn550_70Cfj3JBFO6fpQX8Sdvq7QkRW683858_jOJpNIUAifzt4P3VRum5JjZ-Xf4VPezHQX3Z-r0y4CgolVaCLmGV_BgnqEBHNCwJp5Xqp3CR7gIXK1h052ZYPxLl-Asb5p0O3TFqcEeLSbC_kJfsGz779OvSP2hef8T-tnpH28pO8Xww',
 };
 
 // describe('Testing HU 2310 - Campos Beneficiario Acreedor - from new quotation', () => {
@@ -305,8 +305,22 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 		cy.log('Test of error message'); //test of error message
 		cy.get('button[name = "identificationType"]').as('idTypeField');
 
-		//propiedades del campo en estado predeterminado
+		//////////////////////////////////////////////pruebas en estado predeterminado
 		cy.log('Test of propierties of field on default state');
+
+		//verificar si es obligatorio
+		cy.get('@idTypeField')
+			.find('span')
+			.contains('*')
+			.should('have.text', '*')
+			.and('have.css', 'color', 'rgb(40, 163, 175)')
+			.and('have.css', 'font-family', 'Roboto-Regular')
+			.and('have.css', 'font-size', '16px');
+
+		//verificacar si es no editable
+		cy.get('@idTypeField').should('not.have.attr', 'type', 'input');
+
+		//verificar estilos
 		cy.get('@idTypeField')
 			.should('not.have.class', 'btn-dropdown-error')
 			.and('have.css', 'background-color', 'rgba(0, 0, 0, 0)')
@@ -316,7 +330,7 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 			.and('have.css', 'font-weight', '100')
 			.and('have.css', 'border', '1px solid rgb(145, 145, 145)');
 
-		//////////////// Pruebas de campo en error de 'campo vacío'/////////////
+		//////////////////////////////////////////////Pruebas de campo en error 'campo vacío'
 		//click dentro y fuera del campo (sin seleccionar una opción)
 		cy.log('Test of propierties of field on empty state');
 		cy.get('@idTypeField').click();
@@ -325,14 +339,14 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 			.should('have.text', 'RUC');
 		cy.get('span').contains('Datos Personales').click();
 
-		//propiedades del contenador del campo
+		//propiedades del contenador del campo en error vacío
 		cy.log('Test of propierties of field container');
 		cy.get('#identificationNumber')
 			.find('img')
 			.should('have.attr', 'alt', 'error')
 			.and('be.visible');
 
-		//propiedades del campo en estado de error 'campo vacío'
+		//propiedades del campo en error vacío
 		cy.log('Test of propierties of field on empty error');
 		cy.get('@idTypeField')
 			.should('have.class', 'btn-dropdown-error')
@@ -343,7 +357,7 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 			.and('have.css', 'font-weight', '100')
 			.and('have.css', 'border', '1px solid rgb(233, 34, 67)');
 
-		//propiedades del mensaje de error
+		//propiedades del mensaje de error vacío
 		cy.log('Test of propierties of error message of empty error');
 		cy.get('#identificationNumber')
 			.contains('Es necesario realizar una selección')
@@ -356,10 +370,13 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 			.and('have.css', 'color', 'rgb(211, 47, 47)')
 			.and('have.css', 'font-weight', '400');
 
-		//propiedades del campo seleccionando una opción
+		//////////////////////////////////////////////pruebas del campo seleccionando una opción
 		cy.log('Test of propierties of field with option selected');
+		//se selecciona una opción
 		cy.get('@idTypeField').click();
 		cy.get('@rucOption').click();
+
+		//estilos del campo con opción seleccionada
 		cy.get('@idTypeField')
 			.should('not.have.class', 'btn-dropdown-error')
 			.and('have.css', 'background-color', 'rgba(0, 0, 0, 0)')
@@ -371,6 +388,7 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 			.and('have.attr', 'title', 'RUC')
 			.and('have.attr', 'value', 'R');
 
+		//verificar texto y estilos opción seleccionada
 		cy.get('@idTypeField')
 			.find('span')
 			.contains('RUC')
