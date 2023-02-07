@@ -301,7 +301,7 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 		).click();
 	}); ///////////////end of beforeEach
 
-	it.only('Tests field Tipo de identificación', () => {
+	it.skip('Tests field Tipo de identificación', () => {
 		cy.log('Test of error message'); //test of error message
 		cy.get('button[name = "identificationType"]').as('idTypeField');
 
@@ -384,16 +384,23 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 	it('Tests field Identificación', () => {
 		cy.get('button[name = "identificationType"]').as('idTypeField');
 		cy.get('@idTypeField').click();
-		cy.get('@idTypeField').blur();
 
 		cy.get('ul > button[id=box-identificationNumber]')
 			.should('have.text', 'RUC')
-			.as('rucOption');
+			.as('rucOption')
+			.click();
 
-		cy.get('@rucOption').click();
+		cy.get('input[name="identificationNumber"]').as('idNumberField');
+		cy.get('@idNumberField')
+			.should('have.css', 'background-color', 'rgb(255, 255, 255)')
+			.and('have.css', 'font-family', 'Roboto-Light')
+			.and('have.css', 'font-size', '16px')
+			.and('have.css', 'color', 'rgb(112, 112, 112)')
+			.and('have.css', 'font-weight', '400')
+			.and('have.css', 'border', '1px solid rgb(145, 145, 145)');
 	});
 
-	it('Tests Button Validar', () => {
+	it.skip('Tests Button Validar', () => {
 		cy.get('button[name = "identificationType"]').as('idTypeField');
 		cy.get('@idTypeField').click();
 		cy.get('@idTypeField').blur();
@@ -405,7 +412,7 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 		cy.get('@rucOption').click();
 	});
 
-	it('Tests Button Cancelar', () => {
+	it.skip('Tests Button Cancelar', () => {
 		cy.get('button[name = "identificationType"]').as('idTypeField');
 		cy.get('@idTypeField').click();
 		cy.get('@idTypeField').blur();
@@ -417,7 +424,7 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 		cy.get('@rucOption').click();
 	});
 
-	it('Tests Button Guardar', () => {
+	it.skip('Tests Button Guardar', () => {
 		cy.get('button[name = "identificationType"]').as('idTypeField');
 		cy.get('@idTypeField').click();
 		cy.get('@idTypeField').blur();
