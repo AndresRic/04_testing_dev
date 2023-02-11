@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open": "cypress open --browser chrome --e2e"
+    "open": "cypress open --browser chrome --e2e",
+    "reporter": "cypress run --spec cypress/e2e/hu2310.cy.js --browser chrome --e2e --headed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.5.0"
+    "cypress": "^12.5.0",
+    "cypress-mochawesome-reporter": "^3.3.0"
   }
 }

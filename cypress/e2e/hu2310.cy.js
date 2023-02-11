@@ -1,5 +1,5 @@
 const info = {
-	quoteNumber: 365,
+	quoteNumber: 480,
 	vehiculo: {
 		placa: 'QUU-0035',
 		usoVehiculo: 1, //1 = particular, 2= comercial,
@@ -50,7 +50,7 @@ const info = {
 		provincia: 'SALINAS',
 	},
 	id_token:
-		'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJjNmEwYmNhYy1kYTkwLTRkODMtOTE2OC1lOTVmNWVlYjZjODYiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMDhhODMzMzktOTBlNy00OWJmLTkwNzUtOTU3Y2NkNTYxYmYxL3YyLjAiLCJpYXQiOjE2NzU3ODkwNDUsIm5iZiI6MTY3NTc4OTA0NSwiZXhwIjoxNjc1NzkyOTQ1LCJlbWFpbCI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsIm5hbWUiOiJNdcOxb3osIEFuZHLDqXMiLCJub25jZSI6IjY3ODkxMCIsIm9pZCI6ImVjOWNiYWQ0LWNlNmUtNDMxOS05ZDk3LWY0MzNlMzE2NmUzYiIsInByZWZlcnJlZF91c2VybmFtZSI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsInJoIjoiMC5BUU1BT1RPb0NPZVF2MG1RZFpWOHpWWWI4YXk4b01hUTJvTk5rV2pwWDE3cmJJWURBRTQuIiwic3ViIjoiMndOeWNVaHRvZHdHU0hNMHcwNm5SWW9xQVRlNUtULTY5NUU4SDE0aU5JMCIsInRpZCI6IjA4YTgzMzM5LTkwZTctNDliZi05MDc1LTk1N2NjZDU2MWJmMSIsInV0aSI6Im1qVGxHb2dYVFVTUFJPZ3N2SWY4QUEiLCJ2ZXIiOiIyLjAiLCJlbXBsb3llZWlkIjoibjE2MjI1NDIifQ.L8NEO0UgpaBUH-4o0zQfzzmEZS-qZVXeZTW0XtNaSlybt2XLD2vC1bYKJCU8xRXih_HF1JNxBGID8j0uaEy6Ty1k9smN97ZbwQO5ZkOue9lrdUufxN7rjiKydo8UPfef6IvIIRcM3IN_KaMapFNQsOC3ZwRwkAYl0IfAdn550_70Cfj3JBFO6fpQX8Sdvq7QkRW683858_jOJpNIUAifzt4P3VRum5JjZ-Xf4VPezHQX3Z-r0y4CgolVaCLmGV_BgnqEBHNCwJp5Xqp3CR7gIXK1h052ZYPxLl-Asb5p0O3TFqcEeLSbC_kJfsGz779OvSP2hef8T-tnpH28pO8Xww',
+		'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJjNmEwYmNhYy1kYTkwLTRkODMtOTE2OC1lOTVmNWVlYjZjODYiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMDhhODMzMzktOTBlNy00OWJmLTkwNzUtOTU3Y2NkNTYxYmYxL3YyLjAiLCJpYXQiOjE2NzYwNzEyNTMsIm5iZiI6MTY3NjA3MTI1MywiZXhwIjoxNjc2MDc1MTUzLCJlbWFpbCI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsIm5hbWUiOiJNdcOxb3osIEFuZHLDqXMiLCJub25jZSI6IjY3ODkxMCIsIm9pZCI6ImVjOWNiYWQ0LWNlNmUtNDMxOS05ZDk3LWY0MzNlMzE2NmUzYiIsInByZWZlcnJlZF91c2VybmFtZSI6IkFuZHJlcy5NdW5vejAxQE91dHNvdXJjaW5nLmxpYmVydHlzZWd1cm9zLmNvbSIsInJoIjoiMC5BUU1BT1RPb0NPZVF2MG1RZFpWOHpWWWI4YXk4b01hUTJvTk5rV2pwWDE3cmJJWURBRTQuIiwic3ViIjoiMndOeWNVaHRvZHdHU0hNMHcwNm5SWW9xQVRlNUtULTY5NUU4SDE0aU5JMCIsInRpZCI6IjA4YTgzMzM5LTkwZTctNDliZi05MDc1LTk1N2NjZDU2MWJmMSIsInV0aSI6Im5sajR2UF9nWVVXSVBzbTFaRG95QVEiLCJ2ZXIiOiIyLjAiLCJlbXBsb3llZWlkIjoibjE2MjI1NDIifQ.gEln8TbzpVQ6IIQ3OnGGUsUpWvf3IzyV0CZmw7qi8TgBSqsS15IdQkyXI-PddIIEZqrdaq909-kJvcocNVVh32ERAuIdxTV5a-H6P0J6XRa8PuvBw5HIgoXeAJL5484mB0-UCRSJXhb16Y2YZQDthnkEs0R8JHYaLJT6Hj94Y687n8SGtf68hKpNqiVSrMJOkY8MktwG6lKIjdjvQnA8ytGPnqXnVoHIpkYksWuK0XM63G4I_qwTHXvfqAHQ0blJe3Gao1wgGjP_mMaDYl-lDJaxDZLK3dxK2EIFJ5wucmjpV8pj_VMHzetM-QOsjkVNByDr7BXsiv2PXeinCuKBQg',
 };
 
 // describe('Testing HU 2310 - Campos Beneficiario Acreedor - from new quotation', () => {
@@ -408,14 +408,37 @@ describe('Testing HU 2310 - Campos Beneficiario Acreedor - from resume a quotati
 			.as('rucOption')
 			.click();
 
+		//verificación de estilos
 		cy.get('input[name="identificationNumber"]').as('idNumberField');
 		cy.get('@idNumberField')
 			.should('have.css', 'background-color', 'rgb(255, 255, 255)')
-			.and('have.css', 'font-family', 'Roboto-Light')
+			.and('have.css', 'font-family', 'Roboto-Light, sans-serif')
 			.and('have.css', 'font-size', '16px')
 			.and('have.css', 'color', 'rgb(112, 112, 112)')
 			.and('have.css', 'font-weight', '400')
 			.and('have.css', 'border', '1px solid rgb(145, 145, 145)');
+
+		//verificar si es editable
+		cy.get('@idNumberField')
+			.and('to.be.enabled')
+			.and('to.be.visible')
+			.and('have.attr', 'placeholder', 'Identificación *')
+			.and('have.attr', 'type', 'text');
+
+		//verificar si al hacer click y salir se pone en error
+		cy.get('@idNumberField').click();
+		cy.get('span').contains('Datos Personales').click();
+		cy.get('@idNumberField')
+			.parent()
+			.parent()
+			.find('img')
+			.should('have.attr', 'alt', 'alert');
+
+		cy.get('@idNumberField')
+			.parent()
+			.parent()
+			.find('span')
+			.should('have.text', 'Este campo no puede quedar vacío');
 	});
 
 	it.skip('Tests Button Validar', () => {
